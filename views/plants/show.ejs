@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+
+<h1><%= plant.name %></h1>
+<p><%= plant.description %></p>
+
+<% if (plant.image) { %>
+  <img src="<%= plant.image %>" />
+<% } %>
+
+<a href="/plants/<%= plant._id %>/edit">Edit</a>
+<a href="/plants">Back</a>
+
+<%- include('../partials/footer') %>

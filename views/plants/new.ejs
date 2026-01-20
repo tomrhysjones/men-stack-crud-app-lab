@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+
+<h1>New Plant</h1>
+
+<form action="/plants" method="POST">
+  <input name="name" placeholder="Name" required />
+  <textarea name="description" placeholder="Description" required></textarea>
+  <input name="image" placeholder="Image URL" />
+  <button>Create</button>
+</form>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+
+<h1>Edit Plant</h1>
+
+<form action="/plants/<%= plant._id %>?_method=PUT" method="POST">
+  <input name="name" value="<%= plant.name %>" required />
+  <textarea name="description" required><%= plant.description %></textarea>
+  <input name="image" value="<%= plant.image %>" />
+  <button>Update</button>
+</form>
+
+<%- include('../partials/footer') %>
